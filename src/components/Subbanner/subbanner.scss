@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+
+.sub-banner {
+    background-color: $white;
+
+    h1{
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid $line-color;
+        @include p-tb(20px);
+    }
+
+    @media (min-width: 992px) {
+
+        h1{
+            font-size: 44px;
+            @include p-tb(40px);
+        }
+    }
+
+    @media (min-width: 1440px) {
+
+        h1{
+            font-size: 52px;
+            @include p-tb(50px);
+        }
+    }
+}

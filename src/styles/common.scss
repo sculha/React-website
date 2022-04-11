@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.container-fluid{
+    @media (min-width: 992px) {
+        @include p-lr(75px);
+    }
+
+    @media (min-width: 1200px) {
+        @include p-lr(100px);
+    }
+}
+
+.ml-auto, .mx-auto{
+    margin-left: auto;
+}
+
+.page-content{
+    @include p-tb(75px);
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.6;
+ }
+ 
+ .text{
+    &-lg{
+       font-size: 16px;
+    }
+ 
+    @media (min-width: 992px) {
+       &-lg{
+          font-size: 20px;
+       }
+    }
+ 
+    @media (min-width: 1200px) {
+       &-lg{
+          font-size: 24px;
+       }
+    }
+ 
+    @media (min-width: 1440px) {
+       &-lg{
+          font-size: 28px;
+       }
+    }
+ }
+ 
+ .color{
+    &-light{
+       color: #aeb4c2;
+    }
+ 
+    &-blue{
+       color: $blue-light;
+    }
+ }
+ 
+ .font{
+    &-ex-light{
+       font-weight: 200;
+    }
+ }
+ 
+ p + p{
+    margin-top: 10px;
+ }
+ 
+ .small, small {
+    font-size: 80%;
+    font-weight: 400;
+ }
+ 
+ .title{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+ 
+    &-sm{
+       font-size: 18px;
+       line-height: 1.6;
+       font-weight: 500;
+    }
+ 
+    &-xs{
+       font-size: 16px !important;
+       line-height: 1.6;
+       font-weight: 500;
+       margin-top: 20px;
+    }
+ 
+    span{
+       font-weight: 200;
+       color: $font-color;
+    }
+ 
+    @media (min-width: 992px) {
+       font-size: 30px;
+ 
+       &-sm{
+          font-size: 20px;
+       }
+    }
+ 
+    @media (min-width: 1200px) {
+       font-size: 34px;
+ 
+       &-sm{
+          font-size: 22px;
+       }
+    }
+ 
+    @media (min-width: 1440px) {
+       font-size: 38px;
+ 
+       &-sm{
+          font-size: 24px;
+       }
+    }
+ }
+ 
+ strong, b{
+    font-weight: 600;
+ }

@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: 'Poppins',sans-seri;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  height: 90vh;
+  position: relative;
+  padding-top: 150px;
+}
+
+.banner article {
+  max-width: 500px;
+}
+
+.banner .title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #4dd4fc;
+  margin-bottom: 15px;
+}
+
+.banner .title::before {
+  content: none;
+}
+
+.banner .sub-title {
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #000;
+}
+
+.banner .scroll {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px dashed #4dd4fc;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.banner .scroll p {
+  position: absolute;
+  top: -30px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .banner .title {
+    font-size: 30px;
+  }
+  .banner .sub-title {
+    font-size: 32px;
+  }
+  .banner .scroll {
+    display: none;
+  }
+}
+
+@-webkit-keyframes jump {
+  50% {
+    bottom: -25px;
+  }
+}
+
+@keyframes jump {
+  50% {
+    bottom: -25px;
+  }
+}
+
+.sub-banner {
+  background-color: #fff;
+}
+
+.sub-banner h1 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .sub-banner h1 {
+    font-size: 44px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sub-banner h1 {
+    font-size: 52px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

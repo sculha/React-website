@@ -1,0 +1,68 @@
+@import "../styles/variables.scss";
+
+.login {
+    position: relative;
+   
+    .container-fluid{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.ant-input-affix-wrapper{
+    @include p-tb(0 !important);
+}
+
+.ant-input{
+    font-size: 14px;
+    @include square(100%, 44px);
+    border-radius: 22px;
+    border: 1px solid $line-color;
+    @include p-tb(10px);
+    @include p-lr(15px);
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &::placeholder{
+        font-size: 13px;
+        color: #e5e5e5;
+        font-weight: 500;
+    }
+}
+
+.btn{
+
+    &:hover{
+        opacity: .8;
+    }
+
+    &-blue{
+        padding: 10px 25px;
+        border-radius: 22px;
+        background-color: $blue;
+        color: $white;
+
+        &:hover{
+            color: $white;
+        }
+    }
+}
+
+.loading{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+}

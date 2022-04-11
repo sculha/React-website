@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.breadcrumb{
+    border-bottom: 1px solid $line-color;
+    background-color: $white;
+    @include p-lr(15px);
+    @include p-tb(0.75rem);
+
+    li, li a{
+       text-transform: capitalize;
+    }
+
+    @media (min-width: 992px) {
+        @include p-lr(75px);
+     }
+    
+     @media (min-width: 1200px) {
+        @include p-lr(100px);
+     }
+}

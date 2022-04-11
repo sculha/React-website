@@ -1,0 +1,24 @@
+@mixin p-tb($t, $b:$t) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+
+@mixin p-lr($l, $r:$l) {
+    padding-left: $l;
+    padding-right: $r;
+}
+
+@mixin m-tb($t, $b:$t) {
+    margin-top: $t;
+    margin-bottom: $b;
+}
+
+@mixin m-lr($l, $r:$l) {
+    margin-left: $l;
+    margin-right: $r;
+}
+
+@mixin square($w, $h:$w) {
+    width: $w;
+    height: $h;
+}
